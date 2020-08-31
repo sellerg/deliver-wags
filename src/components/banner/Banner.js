@@ -69,6 +69,10 @@ const ButtonWrapper = styled.div`
     font-family: ${(props) => props.theme.font.main};
     color: black;
     border: 2px solid black;
+    &:hover {
+      cursor: pointer;
+      filter: brightness(50%);
+    }
   }
 `;
 

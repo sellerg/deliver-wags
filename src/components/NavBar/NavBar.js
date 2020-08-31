@@ -141,7 +141,7 @@ const NavLinks = styled.div`
         transform: scale(1);
         animation: none;
         &:hover {
-          background-color: deepskyblue;
+          filter: brightness(70%);
         }
       }
     }
