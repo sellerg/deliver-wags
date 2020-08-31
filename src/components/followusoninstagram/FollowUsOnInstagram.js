@@ -46,8 +46,7 @@ const ButtonWrapper = styled.div`
     display: flex;
     align-items: center;
 
-    transform: ${(props) =>
-      props.inView ? "translateX(0)" : "translateX(-100%)"};
+    transform: ${(props) => (props.inView ? "scale(1)" : "scale(0.9)")};
     opacity: ${(props) => (props.inView ? "1" : "0")};
     transition: transform 300ms ease-out;
 

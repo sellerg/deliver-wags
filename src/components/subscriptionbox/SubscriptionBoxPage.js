@@ -146,6 +146,23 @@ export default function SubscriptionBoxPage() {
 const SubscriptionBoxPageWrapper = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  animation-name: pageLoad;
+  animation-duration: 750ms;
+  animation-timing-function: ease-in;
+  animation-delay: 0ms;
+  animation-fill-mode: forwards;
+
+  @keyframes pageLoad {
+    0% {
+      opacity: 0;
+      transform: rotateX(-10deg);
+    }
+
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg);
+    }
+  }
   @media ${(props) => props.theme.breakpoints.mobile} {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;

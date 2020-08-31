@@ -51,8 +51,7 @@ const PhotosFromYouWrapper = styled.div`
 const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
-  transform: ${(props) =>
-    props.inView ? "translateX(0)" : "translateX(-50%)"};
+  transform: ${(props) => (props.inView ? "scale(1)" : "scale(0.9)")};
   opacity: ${(props) => (props.inView ? "1" : "0")};
   transition: transform 500ms ease-out;
 `;

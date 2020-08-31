@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-import logo from "../../assets/logo1.png";
+import logo from "../../assets/deliverwagslogo5.png";
 
 export default function NavBar(props) {
   return (
@@ -14,7 +14,7 @@ export default function NavBar(props) {
       </Hamburger>
       <Logo to="/">
         <img src={logo} alt="logo" />
-        <h1>Deliver Wags</h1>
+        {/* <h1>Deliver Wags</h1> */}
       </Logo>
       <Spacer />
       <NavLinks>
@@ -85,8 +85,9 @@ const Logo = styled(Link)`
   }
 
   & img {
-    width: 3rem;
+    width: 15rem;
     margin-right: 1rem;
+    margin-top: 1rem;
   }
 
   & h1 {
@@ -180,6 +181,8 @@ const A = styled(Link)`
   color: ${(props) => props.theme.colors.text};
   font-size: ${(props) => props.theme.sizing.medium};
   display: block;
+  width: 100%;
+  height: 100%;
   & i {
     margin-left: 0.5rem;
     color: grey;

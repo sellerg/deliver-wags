@@ -77,6 +77,23 @@ export default function GiftBoxPage() {
 const GiftBoxPageWrapper = styled.div`
   padding: 2rem 0;
   margin: none;
+  animation-name: pageLoad;
+  animation-duration: 750ms;
+  animation-timing-function: ease-in;
+  animation-delay: 0ms;
+  animation-fill-mode: forwards;
+
+  @keyframes pageLoad {
+    0% {
+      opacity: 0;
+      transform: rotateX(-10deg);
+    }
+
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg);
+    }
+  }
   & p {
     padding: 2rem;
     font-family: ${(props) => props.theme.font.main};

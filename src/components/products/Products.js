@@ -29,8 +29,7 @@ export default function Products() {
 const ProductsWrapper = styled.div`
   border: 0;
   margin: 0;
-  background-color: lightgray;
-  padding: 2rem;
+  padding: 1rem 0;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -65,14 +64,13 @@ const ProductsWrapper = styled.div`
 
 const BoxWrapper = styled.div`
   min-height: 25vw;
-  padding: 2rem;
+  padding: 1rem;
   @media ${(props) => props.theme.breakpoints.mobile} {
     min-height: 40vw;
   }
   width: 100%;
   height: 100%;
-  border-bottom: 2rem solid lightgray;
-  border-right: 2rem solid lightgray;
+  border: 1rem solid white;
   display: flex;
   align-items: flex-end;
   justify-content: center;

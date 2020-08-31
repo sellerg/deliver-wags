@@ -36,8 +36,7 @@ const SignUpWrapper = styled.div`
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 1fr 2fr 1fr;
-    transform: ${(props) =>
-      props.inView ? "translateX(0)" : "translateX(-50%)"};
+    transform: ${(props) => (props.inView ? "scale(1)" : "scale(0.9)")};
     opacity: ${(props) => (props.inView ? "1" : "0")};
     transition: transform 300ms ease-out;
 

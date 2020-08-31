@@ -40,6 +40,7 @@ const BannerWrapper = styled.div`
   @media ${(props) => props.theme.breakpoints.mobile} {
     flex-direction: column;
     height: auto;
+    text-align: center;
   }
 `;
 

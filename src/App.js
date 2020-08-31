@@ -66,25 +66,10 @@ function App() {
                   ></path>
                 </svg> */}
                 <FeaturedProducts />
-                <svg
-                  style={{
-                    border: "0",
-                    margin: "0",
-                    transform: "translateY(5px)",
-                  }}
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 1440 320"
-                >
-                  <path
-                    fill="#D3D3D3"
-                    fill-opacity="1"
-                    d="M0,32L1440,192L1440,320L0,320Z"
-                  ></path>
-                </svg>
                 <Products />
                 <svg
                   style={{
-                    background: "lightgray",
+                    background: "white",
                   }}
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 1440 320"
@@ -128,4 +113,21 @@ export default App;
 const Container = styled.div`
   display: grid;
   height: 100%;
+  animation-name: pageLoad;
+  animation-duration: 750ms;
+  animation-timing-function: ease-in;
+  animation-delay: 0ms;
+  animation-fill-mode: forwards;
+
+  @keyframes pageLoad {
+    0% {
+      opacity: 0;
+      transform: rotateX(-10deg);
+    }
+
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg);
+    }
+  }
 `;

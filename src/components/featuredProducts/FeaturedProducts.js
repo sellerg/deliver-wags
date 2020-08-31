@@ -53,8 +53,7 @@ const ImageWrapper = styled.div`
   & img {
     width: auto;
     max-width: 20rem;
-    transform: ${(props) =>
-      props.inView ? "translateX(0)" : "translateX(-100%)"};
+    transform: ${(props) => (props.inView ? "scale(1)" : "scale(0.9)")};
     opacity: ${(props) => (props.inView ? "1" : "0")};
     transition: transform 0.3s ease-out;
   }
