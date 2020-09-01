@@ -12,6 +12,7 @@ export default function CartPage() {
 const CartPageWrapper = styled.div`
   padding: 2rem;
   margin: none;
+  margin-top: 7rem;
   & h1 {
     text-align: center;
     font-family: ${(props) => props.theme.font.main};

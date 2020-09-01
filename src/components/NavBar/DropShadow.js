@@ -9,7 +9,7 @@ const DropShadowContainer = styled.div`
   height: 110vh;
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
-  z-index: 50;
+  z-index: 250;
   position: absolute;
   position: fixed;
   top: 0;

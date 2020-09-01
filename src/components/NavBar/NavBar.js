@@ -68,6 +68,8 @@ const NavWrapper = styled.header`
   background-color: rgba(250, 250, 250, 0.8);
   box-shadow: 0 10px 10px -15px black;
   z-index: 2;
+  position: fixed;
+  top: 2rem;
 
   & h1 {
     font-family: ${(props) => props.theme.font.main};

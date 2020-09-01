@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-import logo from "../../assets/deliverwagslogo3.png";
+import logo from "../../assets/deliverwagslogo5.png";
 
 export default function SideDrawer(props) {
   return (
@@ -70,7 +70,7 @@ const SideDrawerContainer = styled.div`
   width: 20rem;
   max-width: 70vw;
   background-color: white;
-  z-index: 100;
+  z-index: 300;
   position: fixed;
   top: 0;
   left: 0;
@@ -118,8 +118,8 @@ const Logo = styled(Link)`
   }
 
   & img {
-    width: 15rem;
-    margin-right: 1rem;
+    width: 12rem;
+    margin: 1rem;
   }
 
   & h1 {

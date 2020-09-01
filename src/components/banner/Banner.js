@@ -37,6 +37,7 @@ const BannerWrapper = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
+  top: 7rem;
   @media ${(props) => props.theme.breakpoints.mobile} {
     flex-direction: column;
     height: auto;

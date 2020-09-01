@@ -151,6 +151,7 @@ const SubscriptionBoxPageWrapper = styled.section`
   animation-timing-function: ease-in;
   animation-delay: 0ms;
   animation-fill-mode: forwards;
+  margin-top: 7rem;
 
   @keyframes pageLoad {
     0% {

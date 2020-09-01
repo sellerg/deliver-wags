@@ -82,6 +82,7 @@ const TreatsPageWrapper = styled.div`
   animation-timing-function: ease-in;
   animation-delay: 0ms;
   animation-fill-mode: forwards;
+  margin-top: 7rem;
 
   @keyframes pageLoad {
     0% {
