@@ -15,6 +15,8 @@ const TopWrapper = styled.div`
   background-color: lightblue;
   text-align: center;
   animation: nav-load 300ms ease-in 100ms;
+  position: sticky;
+  z-index: 200;
 
   @keyframes nav-load {
     0% {

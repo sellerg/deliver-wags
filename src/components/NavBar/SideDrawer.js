@@ -71,7 +71,6 @@ const SideDrawerContainer = styled.div`
   max-width: 70vw;
   background-color: white;
   z-index: 100;
-  position: absolute;
   position: fixed;
   top: 0;
   left: 0;

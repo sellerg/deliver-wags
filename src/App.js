@@ -113,6 +113,7 @@ export default App;
 const Container = styled.div`
   display: grid;
   height: 100%;
+  width: 100%;
   animation-name: pageLoad;
   animation-duration: 750ms;
   animation-timing-function: ease-in;

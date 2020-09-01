@@ -68,8 +68,9 @@ const NavWrapper = styled.header`
   background-color: rgba(250, 250, 250, 0.8);
   box-shadow: 0 10px 10px -15px black;
   z-index: 2;
-  position: --webkit-sticky;
+  position: -webkit-sticky;
   position: sticky;
+  top: 2rem;
 
   & h1 {
     font-family: ${(props) => props.theme.font.main};
@@ -224,7 +225,7 @@ const Hamburger = styled.button`
     }
 
     & div {
-      background-color: black;
+      background: black;
       width: 100%;
       height: 3px;
     }
