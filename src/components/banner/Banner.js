@@ -46,6 +46,9 @@ const BannerWrapper = styled.div`
 
 const HeadingWrapper = styled.div`
   width: 60%;
+  @media ${(props) => props.theme.breakpoints.mobile} {
+    width: 100%;
+  }
   padding: 2rem;
   color: black;
   font-family: ${(props) => props.theme.font.main};

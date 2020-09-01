@@ -43,8 +43,8 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Router>
-        <Container>
+      <Container>
+        <Router>
           {dropshadow}
           <TopBar />
           <NavBar handleHamburgerClick={handleHamburgerClick} />
@@ -102,8 +102,8 @@ function App() {
           <SignUp />
           <Footer />
           <Company />
-        </Container>
-      </Router>
+        </Router>
+      </Container>
     </ThemeProvider>
   );
 }
@@ -112,9 +112,10 @@ export default App;
 
 const Container = styled.div`
   display: grid;
+  top: 0;
+  left: 0;
   height: 100%;
-  width: 100%;
-  animation-name: pageLoad;
+  /* animation-name: pageLoad;
   animation-duration: 750ms;
   animation-timing-function: ease-in;
   animation-delay: 0ms;
@@ -130,5 +131,7 @@ const Container = styled.div`
       opacity: 1;
       transform: rotateX(0deg);
     }
-  }
+  } 
+    THIS BREAKS POSITION: FIXED FOR SOME REASON?
+  */
 `;

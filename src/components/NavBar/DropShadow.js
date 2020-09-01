@@ -6,8 +6,8 @@ export default function DropShadow(props) {
 }
 
 const DropShadowContainer = styled.div`
-  height: 100vh;
-  width: 100vw;
+  height: 110vh;
+  width: 100%;
   background: rgba(0, 0, 0, 0.7);
   z-index: 50;
   position: absolute;

@@ -68,9 +68,6 @@ const NavWrapper = styled.header`
   background-color: rgba(250, 250, 250, 0.8);
   box-shadow: 0 10px 10px -15px black;
   z-index: 2;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 2rem;
 
   & h1 {
     font-family: ${(props) => props.theme.font.main};
@@ -89,7 +86,6 @@ const Logo = styled(Link)`
   & img {
     width: 15rem;
     margin-right: 1rem;
-    margin-top: 1rem;
   }
 
   & h1 {
@@ -217,6 +213,7 @@ const Hamburger = styled.button`
     flex-direction: column;
     justify-content: space-evenly;
     margin-right: 2rem;
+    box-sizing: border-box;
 
     &:hover,
     &:focus {
@@ -225,7 +222,7 @@ const Hamburger = styled.button`
     }
 
     & div {
-      background: black;
+      background-color: black;
       width: 100%;
       height: 3px;
     }

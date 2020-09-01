@@ -66,7 +66,7 @@ export default function SideDrawer(props) {
 }
 
 const SideDrawerContainer = styled.div`
-  height: 100vh;
+  height: 110vh;
   width: 20rem;
   max-width: 70vw;
   background-color: white;
